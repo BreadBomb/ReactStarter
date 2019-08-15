@@ -1,7 +1,7 @@
+import {TEST_EXAMPLE} from "./constants";
 import {AnyAction} from "redux";
 import {ITestState} from "./state";
 import produce from "immer";
-import {TEST_EXAMPLE} from "./constants";
 
 export const reducerName = 'Test';
 
@@ -15,8 +15,6 @@ export default function reducer(state = initialState, action: AnyAction) {
             case TEST_EXAMPLE:
                 draft.example = action.text;
                 break;
-            default:
-                return state;
         }
     });
 }
