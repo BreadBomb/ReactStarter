@@ -1,9 +1,11 @@
+import globalReducer from "./globalReducer";
+
 export class ReducerRegistry {
     private _emitChange = (reducers: any) => {};
     private _reducers = {};
 
     getReducers(): any {
-        return { ...this._reducers };
+        return { globalReducer, ...this._reducers };
     }
 
     register(name: string, reducer: Function) {

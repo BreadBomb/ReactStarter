@@ -20,7 +20,6 @@ const combine = (reducers: Array<() => {}>) => {
 };
 
 const reducer = combine(reducerRegistry.getReducers());
-console.log(reducer);
 const store = createStore(reducer, initialState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 reducerRegistry.setChangeListener((reducers: any) => {

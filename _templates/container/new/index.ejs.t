@@ -1,22 +1,25 @@
+---
+to: src/container/<%= name %>/index.tsx
+---
 import React from "react";
 import {connect} from "react-redux";
 import {Dispatch} from "redux";
-import {ITestState} from "./state";
+import {I<%= name %>State} from "./state";
 import {SetExample} from "./actions";
 import ReducerRegistry from "../../utils/reducerRegistry";
 import reducer, {reducerName} from "./reducer";
 
-interface ITestContainerProps {
+interface I<%= name %>ContainerProps {
     example: string,
     setExample: () => {}
 }
 
 ReducerRegistry.register(reducerName, reducer);
 
-const TestContainer: React.FC<ITestContainerProps> = (props: ITestContainerProps) => {
+const <%= name %>Container: React.FC<I<%= name %>ContainerProps> = (props: I<%= name %>ContainerProps) => {
     const {example} = props;
     return (
-        <div>TestContainer works! <br /><span>{example}</span></div>
+        <div><%= name %>Container works! <br /><span>{example}</span></div>
     );
 };
 
@@ -30,7 +33,7 @@ const mapStateToProps = (state: any) => {
 
 const mapDispatchToProps = (dispatch: Dispatch) => {
     return {
-        setExample: () => dispatch(SetExample("test"))
+        setExample: () => dispatch(SetExample("<%= name.toLowerCase() %>"))
     };
 };
 

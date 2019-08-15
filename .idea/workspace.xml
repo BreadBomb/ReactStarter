@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a0b0fad-d807-4c2c-80cf-089401714e59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container/TestContainer/actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container/TestContainer/constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container/TestContainer/reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container/TestContainer/state.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/createStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_templates/container/new/actions.ejs.t" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_templates/container/new/constants.ejs.t" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_templates/container/new/index.ejs.t" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_templates/container/new/reducer.ejs.t" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_templates/container/new/state.ejs.t" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/globalReducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/globalState.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_templates/container/new/hello.ejs.t" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/TestContainer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/TestContainer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/TestContainer/reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/TestContainer/reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/createStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/createStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/reducerRegistry.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/reducerRegistry.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,12 +37,20 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_templates/container/new" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="C:\Users\Jonah Wichtrup\WebstormProjects\helios\node_modules\typescript\lib" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_templates/container/new" />
+      <recent name="$PROJECT_DIR$/src/utils" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -80,6 +90,9 @@
       <option name="presentableId" value="Default" />
       <updated>1565709862850</updated>
       <workItem from="1565709864571" duration="7555000" />
+      <workItem from="1565767029448" duration="1703000" />
+      <workItem from="1565867399658" duration="5000" />
+      <workItem from="1565878405110" duration="35000" />
     </task>
     <servers />
   </component>
@@ -94,7 +107,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

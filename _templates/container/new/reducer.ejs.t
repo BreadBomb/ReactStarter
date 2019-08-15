@@ -1,3 +1,6 @@
+---
+to: src/container/<%= name %>/reducer.ts
+---
 import {AnyAction} from "redux";
 import {ITestState} from "./state";
 import produce from "immer";
